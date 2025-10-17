@@ -21,9 +21,7 @@ body {
     background-color: #f7f4e3;
     color: #3e2a47;
     border-radius: 10px;
-    padding: 15px 25px;
     font-weight: bold;
-    font-size: 24px;
     text-align: center;
 }
 
@@ -80,7 +78,7 @@ body {
     color: #7e6090;
 }
 
-/* ======== SECTION CARTES ======== */
+/* ------- SECTION CARTES ------- */
 .cards-section {
     padding: 30px;
 }
@@ -121,6 +119,10 @@ body {
     height: auto;
 }
 
+.card-box:hover {
+    transform: scale(1.15);
+}
+
 .card-box-large {
     padding: 10px 35px 10px;
     border-radius: 10px;
@@ -133,9 +135,6 @@ body {
     transform: scale(1.15);
 }
 
-.large:hover {
-    transform: scale(1.15);
-}
 
 /* Description sous les cartes et packs */
 .desc {
@@ -148,7 +147,7 @@ body {
     padding: 5px;
 }
 
-/* ======== SECTION CONTACT ======== */
+/* --------- SECTION CONTACT ------- */
 .contact-section {
     border: 2px solid #3e2a47;
     background-color: #f7f4e3;
@@ -192,7 +191,7 @@ body {
     min-width: 250px;
 }
 
-/* ======== RESPONSIVE ======== */
+/* --------- RESPONSIVE -------- */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -213,7 +212,7 @@ body {
   }
 }
 
-/* ======== cards.html page ======== */
+/* --------- cards.html page --------- */
 
 
 /* Page de présentation pack */
@@ -286,7 +285,7 @@ hr {
     align-items: center;
 }
 
-/* ======== RESPONSIVE ======== */
+/* ------- RESPONSIVE -------- */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -320,7 +319,6 @@ main {
 /* ======== about.html page ======== */
 
 .about-section {
-    background-color: aliceblue;
     border-radius: 10px;
 }
 
@@ -347,6 +345,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+    margin: 15px;
 }
 
 .img-company {
@@ -396,3 +395,38 @@ main {
     flex-wrap: wrap;
 }
 
+.titre-company {
+    margin-top: 4px;
+    font-size: 30px;
+    text-align: justify;
+    color: #2e1f33;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 5px 50px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1200px;
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+
+.titre-edu {
+    margin-top: 4px;
+    font-size: 30px;
+    text-align: justify;
+    color: #2e1f33;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 5px 50px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1130px;
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
