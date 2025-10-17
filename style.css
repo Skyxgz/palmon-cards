@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', sans-serif;
+}
+
+/* ======== HEADER ======== */
+.header {
+    background-color: #3e2a47;
+    color: #f2e6b6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacement entre logo, recherche et bouton */
+    padding: 15px 25px;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    background-color: #f7f4e3;
+    color: #3e2a47;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Barre de recherche */
+.search-container input {
+    width: 600px;
+    max-width: 100%; /* S’adapte à la largeur de l’écran */
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid #3e2a47;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Bouton Sign In */
+.signin {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #5b4462;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Bouton Sign In Icone*/
+.user-icon i {
+    font-size: 24px;
+    color: #f2e6b6;
+}
+
+.signin:hover {
+    background-color: #6a5074;
+}
+
+/* -------- BARRE DE NAVIGATION -------- */
+.navbar {
+    background-color: #dcd4c4;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3e2a47;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.2s;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: #7e6090;
+}
+
+/* ======== SECTION CARTES ======== */
+.cards-section {
+    padding: 30px;
+}
+
+/* Ligne de cartes */
+.card-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: rgba(253, 250, 240, 0.5);
+    border-radius: 10px;
+}
+
+/* Carte individuelle */
+.card {
+    text-align: center;
+    width: 280px;
+    padding: 10px;
+}
+
+/* Type de carte */
+.type {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #3e2a47;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Boîte représentant la carte */
+.card-box {
+    padding: 10px 35px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-box-large {
+    padding: 10px 35px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-box-large:hover {
+    transform: scale(1.15);
+}
+
+.large:hover {
+    transform: scale(1.15);
+}
+
+/* Description sous les cartes et packs */
+.desc {
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: justify;
+    color: #2e1f33;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* ======== SECTION CONTACT ======== */
+.contact-section {
+    border: 2px solid #3e2a47;
+    background-color: #f7f4e3;
+    padding: 20px;
+    padding-left: 80px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contact-section h2 {
+    color: #3e2a47;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 500px;
+}
+
+/* Partie gauche (photo et infos) */
+.contact-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.photo {
+    background-color: #6a5074;
+    color: #f7f4e3;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: px;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 220px;
+}
+
+/* Partie droite (description) */
+.contact-right {
+    flex: 2;
+    min-width: 250px;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
+/* ======== cards.html page ======== */
+
+
+/* Page de présentation pack */
+.cards-pack {
+    padding: 2px;
+}
+
+/* Pack en haut de la page */
+.pack-row-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permet de passer à la ligne si trop de cartes */
+    margin-bottom: 10px;
+}
+
+/* Pack individuel */
+.pack {
+    width: 280px;
+    display: flex;
+    width: 100%;
+    height: 320px;
+    align-items: center;
+}
+
+/* Nom de chaque pack */
+.pack-name {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #3e2a47;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 10px 4px;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+/* Image de chaque pack */
+.pack-img {
+    padding: 10px 10px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+.pack-img:hover {
+    transform: scale(1.1);
+}
+
+/* Description de chaque pack */
+.description-pack {
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: justify;
+    color: #2e1f33;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 5px;
+    flex: 1;
+    min-width: 240px;
+    padding-bottom: 250px;
+    margin: 5px;
+}
+
+/* Séparateur */
+hr {
+    color: black;
+    align-items: center;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .pack-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description-pack {
+        font-size: 14px;
+    }
+}
+
+/* ======== Background ======== */
+
+main {
+    background-image: url(Images/fond-palworld.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    margin: 0;
+    }
+
+/* ======== about.html page ======== */
+
+.about-section {
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: rgba(253, 250, 240, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.company-desc {
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: justify;
+    color: #2e1f33;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.img-company {
+    padding: 10px 35px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.educational-background {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: rgba(253, 250, 240, 0.5);
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.edu-desc {
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: justify;
+    color: #2e1f33;
+    background-color: #dcd4c4;
+    border-radius: 10px;
+    padding: 5px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.img-edu {
+    padding: 10px 35px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
